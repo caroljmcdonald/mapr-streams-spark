@@ -33,7 +33,7 @@ java -cp mapr-streams-spark-1.0.jar:`mapr classpath` com.streamskafka.example.Ms
 
 To Run the Spark Consumer Producer (in separate consoles if you want to run at the same time) run the spark consumer with the topic to read from and write to:
 
-spark-submit --class com.sparkkafka.example.SparkKafkaConsumer --master local[2] mapr-streams-spark-1.0.jar localhost:9999 /user/user01/stream:cdrs /user/user01/stream:cdrp
+spark-submit --class com.sparkkafka.example.SparkKafkaConsumer --master local[2] mapr-streams-spark-1.0.jar localhost:9999 /user/user01/stream:cdrp /user/user01/stream:cdrs
 
 To run the MapR Streams Java consumer, run the Java consumer with the topic to read from:
 
